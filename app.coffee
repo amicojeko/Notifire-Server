@@ -9,8 +9,6 @@ server.listen port, ->
 status =
   deviceConnected: false
 
-#app.get '/', (req, res) ->
-#  res.sendfile "#{__dirname}/index.html"
 app.get '/status.json', (req, res) ->
   res.json status
 
